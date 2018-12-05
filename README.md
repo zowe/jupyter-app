@@ -6,7 +6,7 @@ SPDX-License-Identifier: EPL-2.0
 
 Copyright Contributors to the Zowe Project.
 
-# Installation Guide to the Zoe Jupyter App
+# Installation Guide to the Zowe Jupyter App
 
 This jupyter app supports either jupyter lab or jupyter notebook for use in the Zowe Desktop.  
 To install this app first untar the *jupytar.tar.gz* file using **tar -xzf jupytar.tar.gz** .  
