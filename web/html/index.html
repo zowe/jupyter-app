@@ -1,0 +1,60 @@
+
+<!-- 
+  This program and the accompanying materials are
+  made available under the terms of the Eclipse Public License v2.0 which accompanies
+  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html
+  
+  SPDX-License-Identifier: EPL-2.0
+  
+  Copyright Contributors to the Zowe Project.
+-->
+
+<html>
+    <head>
+        <title>Jupyter Notebook App</title>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width">
+        <meta name = "referrer" content = "origin-when-cross-origin">
+        <base target = "_self">
+
+        <!-- Add the CSS stylesheet to format the iframe -->
+        <link rel="stylesheet" href="../css/iframe.css">
+
+        <!-- Adding the main.js file to the backend of this iframe -->
+        <script type="text/javascript" src="../js/main.js"></script>
+
+    </head>
+
+    <body>  
+
+        <!-- iFrame containing the Jupyter Notebook application to display in the mvd -->
+        <iframe src="PLEASE REPLACE WITH ACTUAL JUPYTER URL/USE initialize.sh"
+         class = "frame1"
+         id = "jup1"
+         scrolling = "no"
+         initial-scale = 2.0
+         name = "jup_frame1" title = "Jupyter Mainframe" 
+         frameborder = "1">
+    </iframe>
+
+    <script type="text/javascript">
+
+        // Use parent to access other applications
+        //console.log("THIS IS THE PARENT ")
+        //console.log(parent);
+
+        </script>
+
+    </body>
+</html>
+
+<!-- 
+  This program and the accompanying materials are
+  made available under the terms of the Eclipse Public License v2.0 which accompanies
+  this distribution, and is available at https://www.eclipse.org/legal/epl-v20.html
+  
+  SPDX-License-Identifier: EPL-2.0
+  
+  Copyright Contributors to the Zowe Project.
+-->
+
