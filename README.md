@@ -4,9 +4,11 @@ this distribution, and is available at https://www.eclipse.org/legal/epl-v20.htm
 
 SPDX-License-Identifier: EPL-2.0
 
-Copyright Contributors to the Zowe Project.# Installation Guide to the Zoe Jupyter App
+Copyright Contributors to the Zowe Project.
 
-This jupyter app supports either jupyter lab or jupyter notebook for use in the zLUX MVD.  
+# Installation Guide to the Zoe Jupyter App
+
+This jupyter app supports either jupyter lab or jupyter notebook for use in the Zowe Desktop.  
 To install this app first untar the *jupytar.tar.gz* file using **tar -xzf jupytar.tar.gz** .  
 
 
@@ -30,10 +32,10 @@ Set the JUP_SERVER environment variable to the given link. This could also be an
 a jupyter lab setup.
 
 The final environment variable that needs to be set is ZOE.
-This variable should be set to the directory that contains all of the plugins for the MVD.
+This variable should be set to the directory that contains all of the plugins for the Zowe App Server.
 i.e *~/testing/zlux*
 
-To finally install the plugin run **./initialize.sh** and the plugin should be installed to the MVD.
+To finally install the plugin run **./initialize.sh** and the plugin should be installed to Zowe.
 
 ## Browser
 Currently Google Chrome supports this application, however, there is a chrome extension called Ignore-xframe-headers that needs to be installed.
@@ -58,7 +60,7 @@ Probably need to use jupyter notebook frontend extensions to communicate between
 and other apps.  
 http://jupyter-notebook.readthedocs.io/en/stable/extending/frontend_extensions.html  
 
-Might need to somehow proxy the jupyter notebook to be available on the same host and port as the MVD in order to allow for upwards and downwards communication from the Jupyter notebook to the application in which the iframe is embedded.
+Might need to somehow proxy the jupyter notebook to be available on the same host and port as the Zowe App Server in order to allow for upwards and downwards communication from the Jupyter notebook to the application in which the iframe is embedded.
 
 
 
