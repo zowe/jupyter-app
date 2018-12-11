@@ -8,8 +8,8 @@
   
   Copyright Contributors to the Zowe Project.
 */
-define(['base/js/namespace'], funtion(Jupyter){
-	Jupyter._target='self';
+define(['base/js/namespace'], function(Jupyter) {
+  Jupyter._target='_self';
 });
 
 /*
