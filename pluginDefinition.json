@@ -1,7 +1,7 @@
 {
   "identifier": "org.zowe.zlux.jupyter-app",
-  "apiVersion": "1.0",
-  "pluginVersion": "1.0",
+  "apiVersion": "1.0.0",
+  "pluginVersion": "1.0.0",
   "pluginType": "application",
   "webContent": {
     "framework": "iframe",
@@ -16,9 +16,7 @@
     "isSingleWindowApp": true,
     "defaultWindowStyle": {
       "width": 1400,
-      "height": 700,
-      "x": 50,
-      "y": 50
+      "height": 700
     }
   },
   "dataServices": []
