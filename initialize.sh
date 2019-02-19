@@ -48,7 +48,7 @@ if [[ -z "${JUPYTER_CONFIG_DIR}" ]]; then
 		# Copying the app to the folder
 		cp -R -p pluginDefinition.json $ZOE/jupyter-app/pluginDefinition.json
 		cp -R -p web $ZOE/jupyter-app/web
-		cp -R -p org.zowe.zlux.jupyter-app.json $ZOE/zlux-example-server/plugins/org.zowe.zlux.jupyter-app.json
+		cp -R -p org.zowe.zlux.jupyter-app.json $ZOE/zlux-app-server/plugins/org.zowe.zlux.jupyter-app.json
 		cp -R -p update_server.sh $ZOE/jupyter-app/update_server.sh
 
 		cd $ZOE/zlux-build
