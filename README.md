@@ -9,12 +9,11 @@ Copyright Contributors to the Zowe Project.
 # Installation Guide to the Zowe Jupyter App
 
 This jupyter app supports either jupyter lab or jupyter notebook for use in the Zowe Desktop.  
-To install this app first untar the *jupytar.tar.gz* file using **tar -xzf jupytar.tar.gz** .  
-
+This app has jupyter as a prerequisite. It does not include jupyter, but can be used to visualize jupyter within the Zowe Desktop.
 
 ## Setting up the Jupyter Server and Config Directory
 
-Then, set up and  start the jupyter notebook server. To do this one needs to run   
+Then, set up and  start a jupyter notebook server. First, a key must be made. To do this one needs to run   
 **openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout mykey.key -out mycert.pem**  
 
 See http://jupyter-notebook.readthedocs.io/en/stable/public_server.html for more details.
@@ -42,21 +41,20 @@ Currently Google Chrome supports this application, however, there is a chrome ex
 Microsoft Edge should work without any extensions, however, it does not always.
 
 ### Bugs and Quirks
-Depending on the browser being used, this application may not worked. It is recommended to use Chrome or Edge.  
-When using Chrome, the extension X-frame-options needs to be enabled.  
+As the Jupyter server is a seperate server, browser security settings regarding cross domain resources applies.
+To get the best experience, the jupyter server should be reached through the mediation layer. This can be done by following this guide:
+https://zowe.github.io/docs-site/latest/extend/extend-apiml/api-mediation-onboard-an-existing-rest-api-service-without-code-changes.html#define-your-service-and-api-in-yaml-format
 
-Sometimes the jupyter notebook/jupyter lab link must be opened within a browser prior to it displaying in the application.
 
 
 BUGS TO FIX
 
 - The terminal -
-Not too certain how to fix this. The Jupyter object in the frontend extensions has a web socket service (wss) link
-that can be found. Potentially changing this might allow a USS terminal to be embedded.
+The Jupyter object in the frontend extensions has a web socket service (wss) link
+that can be found. Changing this might allow a USS terminal to be embedded.
 
 ### Developer Knowledge
-
-Probably need to use jupyter notebook frontend extensions to communicate between the jupyter notebook
+Experimentation: Use jupyter notebook frontend extensions to communicate between the jupyter notebook
 and other apps.  
 http://jupyter-notebook.readthedocs.io/en/stable/extending/frontend_extensions.html  
 
